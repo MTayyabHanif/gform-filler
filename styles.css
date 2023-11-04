@@ -1,0 +1,58 @@
+*,::after,::before{box-sizing:border-box}*{margin:0}body{line-height:1.5;-webkit-font-smoothing:antialiased}canvas,img,picture,svg,video{display:block;max-width:100%}button,input,select,textarea{font:inherit}h1,h2,h3,h4,h5,h6,p{overflow-wrap:break-word}#__next,#root{isolation:isolate}
+
+.box-wrap {
+    display: flex;
+    max-width: 1024px;
+    margin:0 auto;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.box {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #1f2937;
+    border-radius: 6px;
+}
+
+body {
+    background: #101827;
+    color: #fff;
+    font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+h2 {
+    margin-bottom: 14px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+button#urlLinkSubmit {
+    background-color: #1c64f2;
+    color: #fff;
+}
+
+button#urlLinkSubmit:hover{
+    background-color: #1958d4;
+}
+
+button#urlLinkPreview {
+    background-color:#fff
+}
+button#urlLinkPreview:hover{
+    background-color:#e7e7e7
+}
+@media screen and (max-width: 600px){
+    .box-wrap {flex-direction: column; justify-content: normal; padding: 1rem;}
+    .box{margin-bottom: 14px}
+}
